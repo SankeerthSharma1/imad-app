@@ -59,7 +59,7 @@ function createTemplate(data) {
 		</html>`;
 
 		return htmlTemplate;
-};
+}
 
 app.get('/:articleName', function (req, res) {
   //res.send('article one requested will be served shortly');
