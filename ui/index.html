@@ -1,15 +1,42 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
+    <head>   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/ui/style.css"/>
+        
     </head>
     <body>
+        <script type="text/javascript" src="../ui/main.js"></script>
+        
+        <a href="/article-one">Article1</a>&nbsp;&nbsp;<a href="/article-two">Article2</a>&nbsp;&nbsp;<a href="/article-three">Article3</a></br></br>
+
         <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+            <!--<img src="/ui/madi.png" class="img-medium"/>-->
+            <img src="https://www.facebook.com/profile/pic.php?cuid=AYjLQzlQ_atCqUtWaLAaYxcFwUzulRqqGORP4qiqzi8d4QSsKLazyTBfLjdLeCcAeEqm9U-X_QQFYuCBiaHdE_G-5Xd0gRk7nfHte2xiPmYWXpxUg2U_26mohuHpk_-JnOw&square_px=64" class="img-small"/>
         </div>
-        <br>
+        
+        <!--<br>
         <div class="center text-big bold">
             Hi! This is Sankeerth Sharma's web app edited page - local nodejs server.
+        </div>-->
+        <div class="center">
+            <h3>Personal Section</h3>
+            This is Sankeerth Sharma Rani.
+            
+            <h3>Professional Section</h3>
+            Persuing 4th year of Engineering @ KMIT
+
+            <br></br>
+            <div class="footer">
+                This button is <button id="btnCounter"> CLICKED </button><span id="spanCounter"> 0</span> times.   
+                <br><br>
+                <input type="text" id="name" placeholder="enter name"></input><input type="submit" id="btnSubmit"></input>
+                
+            </div>
+            <div class="center"><ul id="nameList">                    
+            </ul></div>
+    
+        
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
