@@ -29,6 +29,8 @@ function postComment() {
 		}
 	};
 
-	request.open('GET','http://localhost/submitComment?comment='+commentVal,true);
+	//request.open('GET','http://localhost/submitComment?comment='+commentVal,true);
+	request.open('GET','	http://sankeerthsharma1.imad.hasura-app.io/submitComment?comment='+commentVal,true);
+
 	request.send(null);	
 }
