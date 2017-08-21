@@ -28,7 +28,7 @@ var articles = {
 		title:'Article Three Page',
 		heading:'Article Three',
 		date: '25, Aug 2017',
-		content: '<p>Third article content goes here. </p>'
+		content: '<p>Third article content goes 555 here. </p>'
 	}
 };
 
