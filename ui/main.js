@@ -26,7 +26,9 @@ button.onclick=function(){
 		}
 	};
 
-	request.open('GET','http://localhost/counter',true);
+	//request.open('GET','http://localhost/counter',true);
+	request.open('GET','http://sankeerthsharma1.imad.hasura-app.io/counter',true);
+	
 	request.send(null);
 };
 
@@ -60,7 +62,9 @@ buttonSubmit.onclick=function(){
 		}
 	};
 
-	request.open('GET','http://localhost/submitName?name='+nameVal,true);
+	//request.open('GET','http://localhost/submitName?name='+nameVal,true);
+	request.open('GET','http://sankeerthsharma1.imad.hasura-app.io/submitName?name='+nameVal,true);
+	
 	request.send(null);	
 };
 
