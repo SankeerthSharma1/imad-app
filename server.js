@@ -28,7 +28,7 @@ app.get('/ui/temp.js', function (req, res) {
 });
 
 var pool = new Pool(config);
-app.get('/test-DB', function(req, res) {
+app.get('/test-db', function(req, res) {
 	pool.query('select * from author', function(err, res) {
 		if(err) {
 			res.status(500).send(err.toString());
