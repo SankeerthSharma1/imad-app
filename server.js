@@ -131,7 +131,7 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 });
 
-app.get('article/:articleName', function (req, res) {
+app.get('/article/:articleName', function (req, res) {
     var articleName=req.params.articleName;
     pool.query("select title,heading,date,content from author where title='"+req.params.articleName+"'", function(err, result) {
 		if(err) {
