@@ -29,14 +29,14 @@ app.get('/ui/temp.js', function (req, res) {
 
 var pool = new Pool(config);
 app.get('/test-db', function(req, res) {
-    res.send("connection successful");
-	/*pool.query('select * from author', function(err, res) {
+    //res.send("connection successful");
+	pool.query('select * from author', function(err, result) {
 		if(err) {
 			res.status(500).send(err.toString());
 		} else {
 			res.send(JSON.stringify(result));
 		}
-	});*/
+	});
 });
 
 var articles = {
