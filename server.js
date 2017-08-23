@@ -27,6 +27,7 @@ app.get('/ui/temp.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'temp.js'));
 });
 
+var pool = new Pool(config);
 app.get('/test-DB', function(req, res) {
 	pool.query('select * from author', function(err, res) {
 		if(err) {
